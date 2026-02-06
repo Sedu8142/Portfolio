@@ -24,11 +24,9 @@ const logout = () => {
       <router-link to="/contact">Contact</router-link>
       <router-link to="/creative">Creative</router-link>
     </div>
-    <!--
     <div class="logoutBtn flexItem">
-      <button v-if="auth.isLoggedIn" @click="logout">Logout</button>
+      <!--<button v-if="auth.isLoggedIn" @click="logout">Logout</button>-->
     </div>
-    -->
   </nav>
 </template>
 
