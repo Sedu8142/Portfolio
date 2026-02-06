@@ -1,4 +1,4 @@
-import { createRouter, createWebHistory } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import { useAuthStore } from '../stores/auth';
 
 import Login from '@/components/login.vue';
@@ -16,9 +16,8 @@ const routes = [
   { path: '/creative', component: Creative}
 ];
 
-
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   routes
 });
 
