@@ -13,7 +13,7 @@ export const useCreativeStore = defineStore('creative', {
       {
         title: 'Sports I like', 
         description: 'I have a strong passion for sports and staying active. I enjoy playing team sports such as basketball and volleyball, which allow me to develop teamwork and strategic thinking. I also enjoy running, which helps me maintain discipline, endurance, and focus. Sports play an important role in keeping me energized, balanced, and motivated both physically and mentally.', 
-        image: new URL('../assets/sports.png', import.meta.url).href,
+        image: new URL('../assets/sports.JPG', import.meta.url).href,
         index: 1
       },
       {

@@ -144,13 +144,16 @@ const sliderStyle = computed(() => ({
 
   .photo {
     width: 40%;
-    display: flex;
+    height: 50vh;
+    display: block;
+    margin: auto;
   }
 
   img {
-    width: 100%;
-    max-height: 90%;
-    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    display: block;
+    margin: auto;
   }
   
 

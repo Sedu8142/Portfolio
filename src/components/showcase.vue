@@ -68,7 +68,7 @@ h1 {
 .projectContainer {
   box-sizing: border-box;
   width: 100%;
-  height: 15%;
+  height: 75px;
   color: whitesmoke;
   overflow-y: hidden;
   padding: 0 1% 0 1%;
@@ -110,7 +110,7 @@ h1 {
 }
 
 .projectContainer:hover img {
-  bottom: 25%;
+  bottom: 15%;
   transition: bottom 0.5s ease-out;
 }
 
@@ -150,7 +150,7 @@ h1 {
 
 .imgContainer img {
   width: auto;
-  height: auto;
+  height: 40vh;
   object-fit: cover;
 }
 

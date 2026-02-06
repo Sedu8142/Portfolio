@@ -5,14 +5,16 @@ import { useRouter } from 'vue-router'
 const auth = useAuthStore()
 const router = useRouter()
 
+/** 
 const logout = () => {
   auth.logout()
   router.push('/login')  // redirect to login
 }
+  */
 </script>
 
 <template>
-  <nav v-if="auth.isLoggedIn">
+  <nav>
     <div class="title flexItem">
       <h1>MAS | <span style="font-size: 1em; color: #3B82F6;">Portfolio</span></h1>
     </div>
@@ -22,6 +24,7 @@ const logout = () => {
       <router-link to="/contact">Contact</router-link>
       <router-link to="/creative">Creative</router-link>
     </div>
+    
     <div class="logoutBtn flexItem">
       <button v-if="auth.isLoggedIn" @click="logout">Logout</button>
     </div>

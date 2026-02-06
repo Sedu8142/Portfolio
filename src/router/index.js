@@ -8,12 +8,12 @@ import Contact from '@/components/contact.vue';
 import Creative from '@/components/creative.vue';
 
 const routes = [
-  { path: '/', redirect: '/login' },
+  { path: '/', redirect: '/profile' },
   { path: '/login', component: Login },
-  { path: '/profile', component: Profile, meta: { requiresAuth: true } },
-  { path: '/showcase', component: Showcase, meta: { requiresAuth: true } },
-  { path: '/contact', component: Contact, meta: { requiresAuth: true } },
-  { path: '/creative', component: Creative, meta: { requiresAuth: true } }
+  { path: '/profile', component: Profile},
+  { path: '/showcase', component: Showcase},
+  { path: '/contact', component: Contact},
+  { path: '/creative', component: Creative}
 ];
 
 
@@ -22,6 +22,7 @@ const router = createRouter({
   routes
 });
 
+/** 
 router.beforeEach((to, from, next) => {
   const auth = useAuthStore()
 
@@ -36,6 +37,7 @@ router.beforeEach((to, from, next) => {
     next()
   }
 })
+*/
 
 
 export default router
