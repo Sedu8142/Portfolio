@@ -36,11 +36,13 @@ const logout = () => {
   }
 
 nav {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: flex;
   align-items: center;
   background-color: black;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 .title {
