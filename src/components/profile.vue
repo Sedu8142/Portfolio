@@ -31,7 +31,7 @@ const profile = useProfileStore()
             <li><ul v-for="stack in profile.stack.database"><img :src="stack.icon" :alt="stack.alt">{{stack.name}}</ul></li>
           </div>
         </div>
-        <p>Download my <span><a href="/public/Mark Allen Siddayao - Resume.pdf" target="_blank" style="font-size: 1.25em; color: #3B82F6;">Resume</a></span></p>
+        <p>Download my <span><a href="/public/Resume.pdf" target="_blank" style="font-size: 1.25em; color: #3B82F6;">Resume</a></span></p>
       </div>
     </div>
     <div class="mainPhotoContainer">
