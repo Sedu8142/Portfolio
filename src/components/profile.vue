@@ -10,9 +10,8 @@ const profile = useProfileStore()
   <div class="content">
     <div class="descContainer">
       <h1>{{profile.name}}</h1>
-      <p>{{ profile.title }}</p>
-      <p>{{ profile.location }}</p>
-      <p>{{ profile.description }}</p>
+      <p style="font-size: 25px;">{{ profile.title }}</p>
+      <p style="font-size: 18px; padding-right: 100px; margin-top: 20px;">{{ profile.description }}</p>
       <div class="skillContainer">
         <div>
           <h3>My <span style="color: #3B82F6; font-size: 1em;">Skills:</span></h3>

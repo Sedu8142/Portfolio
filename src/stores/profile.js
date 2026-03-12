@@ -3,10 +3,10 @@ import { defineStore } from 'pinia';
 export const useProfileStore = defineStore('profile', {
   state: () => ({
     name: "Mark Allen Siddayao",
-    title: "Computer Engineering Student",
-    description: "Focused on Web & IoT Systems using Vue, Firebase, and ESP8266",
+    title: "Computer Engineering Graduate - Cum Laude",
+    description: "Computer Engineering graduate specializing in full-stack web development. Experienced in building modern web applications using HTML, CSS, JavaScript, Vue, Java, Python, and PHP, with database integration through MySQL and Firebase. Passionate about developing scalable software systems and integrating web technologies with emerging platforms such as IoT.",
     location: "Marikina City, NCR",
-    photo: new URL('../assets/MyPhoto.jpeg', import.meta.url).href,
+    photo: new URL('../assets/MyPhoto.jpg', import.meta.url).href,
     alt: "php icon",
     stack: {
       frontEnd: [
