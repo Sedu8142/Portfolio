@@ -8,7 +8,7 @@ export const useShowcaseStore = defineStore('showcase', {
         description: 'A smart medicine storage solution with integrated IoT features, designed to assist elderly users in managing their medications. The system monitors medicine intake, maintains detailed logs, and triggers alarms to notify users according to their prescribed schedules, promoting adherence and safety.', 
         image: new URL('../assets/PharmAssist.jpeg', import.meta.url).href,
         alt: 'PharmAssist Image',
-        status: 'pending'
+        status: 'done'
       },
       {
         title: 'Breasy', 
