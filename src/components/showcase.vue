@@ -7,23 +7,25 @@ const showcase = useShowcaseStore()
 </script>
 
 <template>
-  <div class="mainDiv">
-    <h1>Projects</h1>
-    <div class="mainProject">
-      <div class="projectContainer" v-for="project in showcase.projects">
-        <div class="projectContent">
-          <h2>{{project.title}}</h2>
-        </div>
-        <div class="projectDetails">
-          <div class="projectDescription">
-            <p>{{ project.description }}</p>
-            <div class="status">
-              <p><span style="font-size: 1em; color: #3B82F6;">Status:  </span>{{ project.status }}</p>
-              <img v-if="project.status == 'done'" src="../assets/done.svg" alt="">
-            </div>
+  <div class="main-container">
+    <div class="mainDiv">
+      <h1>Projects</h1>
+      <div class="mainProject">
+        <div class="projectContainer" v-for="project in showcase.projects">
+          <div class="projectContent">
+            <h2>{{project.title}}</h2>
           </div>
-          <div class="imgContainer">
-            <img :src="project.image" :alt="project.alt">
+          <div class="projectDetails">
+            <div class="projectDescription">
+              <p>{{ project.description }}</p>
+              <div class="status">
+                <p><span style="font-size: 1em; color: #3B82F6;">Status:  </span>{{ project.status }}</p>
+                <img v-if="project.status == 'done'" src="../assets/done.svg" alt="">
+              </div>
+            </div>
+            <div class="imgContainer">
+              <img :src="project.image" :alt="project.alt">
+            </div>
           </div>
         </div>
       </div>
@@ -32,14 +34,24 @@ const showcase = useShowcaseStore()
 </template>
 
 <style scoped>
+.main-container {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mainDiv {
   width: 90%;
   height: 90%;
-  margin: 2%;
-  padding: 1%;
+  padding: 10px;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 2%;
   background: rgba(255, 255, 255, 0.12);
   border-radius: 20px;
@@ -61,7 +73,7 @@ h1 {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 20px;
   justify-content: center;
 }
 
@@ -74,6 +86,7 @@ h1 {
   padding: 0 1% 0 1%;
   display: flex;
   flex-direction: column;
+  flex-shrink: 1;
   border-radius: 10px;
   transition: box-shadow 0.5s ease-out, height 0.5s ease-out;
   box-shadow: 0 0 10px 1px inset black;

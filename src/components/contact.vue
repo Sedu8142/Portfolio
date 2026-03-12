@@ -5,29 +5,32 @@
 </script>
 
 <template>
-  <div class="mainDiv">
-    <div class="socialsDiv">
-      <h1>Let's Connect!</h1>
-      <div class="socials">
-        <h2>Socials</h2>
-        <div class="iconContainer">
-          <button v-for="social in contact.socials" :key="social.name" @click="contact.redirect(social.link)">
-            <img :src="social.icon" alt="">
-          </button>
+  <div class="main-container">
+    <div class="mainDiv">
+      <div class="socialsDiv">
+        <h1>Let's Connect!</h1>
+        <div class="socials">
+          <h2>Socials</h2>
+          <div class="iconContainer">
+            <button v-for="social in contact.socials" :key="social.name" @click="contact.redirect(social.link)">
+              <img :src="social.icon" alt="">
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="emailDiv">
-      <h2>Send an <span style="font: inherit; color: #3B82F6;">E-mail</span></h2>
-      <form action="https://api.web3forms.com/submit" method="POST">
-        <input type="hidden" name="access_key" value="cac0ce32-c6a2-4524-8cca-455f837bcb76">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="text" name="email" placeholder="Your Email" required>
-        <textarea name="message" id="" placeholder="Your Message"></textarea>
-        <button type="submit">Send Message</button>
-      </form>
+      <div class="emailDiv">
+        <h2>Send an <span style="font: inherit; color: #3B82F6;">E-mail</span></h2>
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="cac0ce32-c6a2-4524-8cca-455f837bcb76">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="text" name="email" placeholder="Your Email" required>
+          <textarea name="message" id="" placeholder="Your Message"></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
     </div>
   </div>
+  
 </template>
 
 <style scoped>
@@ -46,6 +49,16 @@ h2 {
   font-weight: bold;
   text-align: center;
   margin: 0%;
+}
+
+.main-container {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .mainDiv {

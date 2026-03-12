@@ -12,25 +12,27 @@ const sliderStyle = computed(() => ({
 
 
 <template>
-  <div class="mainDiv">
-    <h1>Get to know me more</h1>
-    <div class="content">
-      <div class="sectionNav">
-        <div class="slider" :style="sliderStyle"></div>
-        <button class="navButton" @click="creative.slide(0)">Academics</button>
-        <button class="navButton" @click="creative.slide(1)">Sports</button>
-        <button class="navButton" @click="creative.slide(2)">Music</button>
-        <button class="navButton" @click="creative.slide(3)">Ambition</button>
-      </div>
-      <div class="mainContent">
-        <div class="perContent" v-for="content in creative.contents">
-          <div class="perContent2" v-if="creative.sliderIndex == content.index">
-            <div class="description">
-              <h2>{{content.title}}</h2>
-              <p>{{ content.description }}</p>
-            </div>
-            <div class="photo">
-              <img :src="content.image" alt="">
+  <div class="main-container">
+    <div class="mainDiv">
+      <h1>Get to know me more</h1>
+      <div class="content">
+        <div class="sectionNav">
+          <div class="slider" :style="sliderStyle"></div>
+          <button class="navButton" @click="creative.slide(0)">Academics</button>
+          <button class="navButton" @click="creative.slide(1)">Sports</button>
+          <button class="navButton" @click="creative.slide(2)">Music</button>
+          <button class="navButton" @click="creative.slide(3)">Ambition</button>
+        </div>
+        <div class="mainContent">
+          <div class="perContent" v-for="content in creative.contents">
+            <div class="perContent2" v-if="creative.sliderIndex == content.index">
+              <div class="description">
+                <h2>{{content.title}}</h2>
+                <p>{{ content.description }}</p>
+              </div>
+              <div class="photo">
+                <img :src="content.image" alt="">
+              </div>
             </div>
           </div>
         </div>
@@ -40,6 +42,15 @@ const sliderStyle = computed(() => ({
 </template>
 
 <style scoped> 
+  .main-container {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   h1 {
     font-size: 3rem;
     margin: 0;
