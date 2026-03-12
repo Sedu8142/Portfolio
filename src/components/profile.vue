@@ -129,7 +129,7 @@ p {
 
 .infoDivs {
   border-radius: 10px;
-  flex: 1;
+  flex: 1 1 0;
   padding: 2%;
   transition: transform 0.15s ease-out, box-shadow 0.15s ease-out;
   box-shadow: 0 0 15px 3px inset black;
