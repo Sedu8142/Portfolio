@@ -15,16 +15,16 @@ const logout = () => {
 
 <template>
   <nav>
-    <div class="title flexItem">
+    <div class="title">
       <h1>MAS | <span style="font-size: 1em; color: #3B82F6;">Portfolio</span></h1>
     </div>
-    <div class="navButtons flexItem">
+    <div class="navButtons">
       <router-link to="/profile">Profile</router-link>
       <router-link to="/showcase">Showcase</router-link>
       <router-link to="/contact">Contact</router-link>
       <router-link to="/creative">Creative</router-link>
     </div>
-    <div class="logoutBtn flexItem">
+    <div class="logoutBtn">
       <!--<button v-if="auth.isLoggedIn" @click="logout">Logout</button>-->
     </div>
   </nav>
@@ -43,17 +43,17 @@ nav {
   background-color: black;
   margin: 0;
   box-sizing: border-box;
+  position: sticky;
+  top: 0;
+  z-index: 1;
 }
 
 .title {
-  position: relative;
+  position: absolute;
   padding-left: 2%;
   box-sizing: border-box;
 }
 
-.flexItem {
-  flex-grow: 1;
-}
 
 .logoutBtn {
   position: relative;
@@ -82,7 +82,9 @@ button:hover {
 
 .navButtons {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
+  flex: 1;
+  gap: 5%;
 }
 
 .router-link-active {

@@ -28,4 +28,9 @@ body {
   height: 90vh;
   box-sizing: border-box;
 }
+
+body.modal-open {
+  overflow: hidden;
+  height: 100vh;
+}
 </style>

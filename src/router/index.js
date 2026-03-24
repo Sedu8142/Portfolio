@@ -6,12 +6,14 @@ import Profile from '@/components/profile.vue';
 import Showcase from '@/components/showcase.vue';
 import Contact from '@/components/contact.vue';
 import Creative from '@/components/creative.vue';
+import Showcase2 from '@/components/showcase2.vue';
 
 const routes = [
   { path: '/', redirect: '/profile' },
   { path: '/login', component: Login },
   { path: '/profile', component: Profile},
   { path: '/showcase', component: Showcase},
+  { path: '/showcase2', component: Showcase2},
   { path: '/contact', component: Contact},
   { path: '/creative', component: Creative}
 ];
